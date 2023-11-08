@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Bank Printer";
+  src: url("./assets/F25_Bank_Printer.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bank Printer";
+}
+
+.expenses-container {
+  margin: 20px auto;
+  width: 525px;
+  max-height: 500px;
+  border: 3px dashed black;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.expenses-container h1 {
+  font-size: 20px;
+  color: rgb(45, 255, 45);
+}
+
+.expenses-container form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weekly-income {
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 10px;
+}
+
+#income {
+  width: 180px;
+  height: 20px;
+  padding: 15px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px black;
+}
+
+.num-of-expenses {
+  margin-top: 10px;
+}
+
+.expenses-total {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  border: 3px dashed black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.expenses-total p {
+  margin: 5px;
+}
+
+.expenses-item {
+  margin: 0px 0px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expenses-input {
+  margin-top: 30px;
+}
+
+#expense-price,
+#expense-type {
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px black;
+  margin: 5px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+#confirm {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px black;
+  background-color: rgb(45, 255, 45);
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+#create-expenses {
+  cursor: pointer;
+  width: 150px;
+  height: 25px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px black;
+  background-color: rgb(45, 255, 45);
+  font-size: 10px;
+}
+
+#create-expenses:hover {
+  color: white;
+}
